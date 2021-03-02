@@ -40,3 +40,10 @@ body {
 .modal-content {
     color:darkgoldenrod;
 }
+.bt{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 20px;
+}

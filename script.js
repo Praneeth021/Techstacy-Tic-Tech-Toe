@@ -68,20 +68,30 @@ function AddQuestion() {
 }
 
 var exampleModal = document.getElementById('exampleModal')
-console.log(exampleModal)
 exampleModal.addEventListener('show.bs.modal', function (event) {
 
   var button = event.relatedTarget;
+  
   
   var modalTitle = exampleModal.querySelector('.modal-title');
   var modalBodyInput = exampleModal.querySelector('.modal-question');
 
   modalTitle.textContent = 'Question ' + button.innerText;
   var index = parseInt(button.innerText);
-  modalBodyInput.textContent = array[index-1];
-    
+  var textContent = "";
+  
+  for (let i = 0; i < array[index - 1].length; i++){
+    textContent+=`<br>${array[index-1][i]}`
+  }
+
+  modalBodyInput.innerHTML = textContent;
+
   
 })
+
+
+
+
 
 var shuffler = document.getElementById('shuffle');
 

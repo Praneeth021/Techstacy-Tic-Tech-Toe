@@ -27,6 +27,11 @@ body {
     background-color:lightcyan;
 }
 
+.modal-custom {
+    display:flex;
+    justify-content:space-between;
+}
+
 
 .modal-title {
     color:blueviolet;

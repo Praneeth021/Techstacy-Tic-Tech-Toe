@@ -23,15 +23,20 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
 
   var button = event.relatedTarget;
   
+  
   var modalTitle = exampleModal.querySelector('.modal-title');
   var modalBodyInput = exampleModal.querySelector('.modal-question');
 
   modalTitle.textContent = 'Question ' + button.innerText;
   var index = parseInt(button.innerText);
-  modalBodyInput.textContent = array[index-1];
-    
+  modalBodyInput.textContent = array[index - 1];
+
   
 })
+
+
+
+
 
 var shuffler = document.getElementById('shuffle');
 
